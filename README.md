@@ -12,7 +12,7 @@ A full-stack GenAI application that allows secure, localized extraction, validat
 Medium-sized enterprises in Germany ("Mittelstand") process thousands of highly structured and unstructured legal/financial PDFs. Manual data entry is expensive and error-prone. Standard cloud AI solutions pose serious data compliance risks (GDPR, EU AI Act).
 
 **Solution**: This MVP demonstrates a secure, local-first hybrid RAG approach. It extracts structured fields using LLMs, assigns confidence scores to minimize hallucinations, and integrates a "Human-in-the-Loop" (HITL) interface for review.
-Running completely locally with Ollama guarantees data remains on-premise.
+Running completely locally with Ollama and utilizing **Docker** for strict container isolation guarantees data remains on-premise, adhering to strict German data privacy laws (*Datenschutz*).
 
 ---
 
@@ -58,6 +58,7 @@ Running completely locally with Ollama guarantees data remains on-premise.
 | **Vector DB** | Qdrant (Docker) | Dense vector storage |
 | **Sparse DB** | BM25 (`rank_bm25`) | Lexical search enhancement |
 | **PDF** | PyMuPDF (`fitz`) | Text extraction handling German umlauts |
+| **Containerization** | Docker | Isolated environments for enhanced data security (*Datenschutz*) |
 
 ---
 
