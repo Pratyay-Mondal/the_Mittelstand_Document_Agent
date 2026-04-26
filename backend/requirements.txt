@@ -1,0 +1,27 @@
+# === FastAPI & Server ===
+fastapi[standard]>=0.115.0
+uvicorn[standard]>=0.32.0
+python-multipart>=0.0.18
+
+# === LangChain Core ===
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-ollama>=0.3.0
+langchain-qdrant>=0.2.0
+
+# === Vector DB & Search ===
+qdrant-client>=1.12.0
+rank-bm25>=0.2.2
+
+# === PDF Processing ===
+pymupdf>=1.25.0
+
+# === Data Validation ===
+pydantic>=2.10.0
+pydantic-settings>=2.7.0
+
+# === Observability ===
+logfire[fastapi]>=3.0.0
+
+# === Dummy PDF Generation ===
+fpdf2>=2.8.0
