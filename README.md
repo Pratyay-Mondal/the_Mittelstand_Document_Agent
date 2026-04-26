@@ -64,13 +64,15 @@ Running completely locally with Ollama guarantees data remains on-premise.
 ## 🚀 Quick Start (Local Setup)
 
 ### Prerequisites
-- Docker Engine
 - Python 3.11+
 - Node.js 22+
 - [Ollama](https://ollama.com/) running locally with models: `llama3.1:8b` and `nomic-embed-text`
+- Docker Engine *(Optional, but recommended for Qdrant)*
 
 ### 1. Vector Database
-Start the persistent Qdrant service using Docker Compose:
+The application supports two modes for the Qdrant vector database:
+- **Local Fallback (No Docker)**: If Docker is not running, the backend will automatically fall back to local persistent storage (`./qdrant_storage`).
+- **Docker (Recommended)**: Start the persistent Qdrant service using Docker Compose:
 ```bash
 docker compose up -d
 ```
