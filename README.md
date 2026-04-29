@@ -109,4 +109,4 @@ To transition this MVP to a production-ready enterprise agent, we would implemen
 2. **Retrieval Evaluation**: Use frameworks like RAGAS to continuously evaluate Context Precision, Context Recall, and Faithfulness on ground-truth evaluation datasets.
 3. **Traceability / Observability**: Full integration with *Pydantic Logfire* or *LangSmith* to log RAG traces, LLM inputs/outputs, and measure latency bottlenecks in production.
 4. **Active Learning Feedback Loop**: Implement a system where human corrections made in the HITL Extraction Panel are stored and periodically used to fine-tune a smaller, highly-specialized local model.
-5. **Deployment**: Containerize the FastAPI backend and deploy to a managed Kubernetes cluster with GPU node-pools attached to scaled-out Ollama/vLLM inference seriers.
+5. **Deployment**: Containerize the FastAPI backend and deploy to a managed Kubernetes cluster with GPU node-pools attached to scaled-out Ollama/vLLM inference servers.
