@@ -1,0 +1,953 @@
+
+> frontend@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.4 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.100:3000
+✓ Ready in 747ms
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /Users/admin/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /Users/admin/Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/package-lock.json
+
+
+○ Compiling / ...
+ GET / 200 in 4.0s (next.js: 3.6s, application-code: 380ms)
+ HEAD / 200 in 51ms (next.js: 4ms, application-code: 47ms)
+⨯ ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx:1:10
+You're importing a module that depends on `useEffect` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { useEffect, useRef, useState } [36mfrom[0m [32m"react"[0m;
+  [90m  |[0m          [31m[1m^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m { useI18n } [36mfrom[0m [32m"@/lib/i18n"[0m;
+  [90m3 |[0m [36mimport[0m { useSSE } [36mfrom[0m [32m"@/hooks/useSSE"[0m;
+  [90m4 |[0m [36mimport[0m { getStreamUrl } [36mfrom[0m [32m"@/lib/api"[0m;
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx
+
+
+
+./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx:1:20
+You're importing a module that depends on `useEffect` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { useState, useEffect } [36mfrom[0m [32m"react"[0m;
+  [90m  |[0m                    [31m[1m^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m { getOriginalExtraction, updateExtraction, reExtract } [36mf...[0m
+  [90m3 |[0m [36mimport[0m { useI18n } [36mfrom[0m [32m"@/lib/i18n"[0m;
+  [90m4 |[0m [36mimport[0m { [33mCard[0m, [33mCardContent[0m, [33mCardHeader[0m, [33mCardTitle[0m, [33mCardDescript...[0m
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx
+
+
+
+./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx:1:21
+You're importing a module that depends on `useRef` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { useEffect, useRef, useState } [36mfrom[0m [32m"react"[0m;
+  [90m  |[0m                     [31m[1m^^^^^^[0m
+  [90m2 |[0m [36mimport[0m { useI18n } [36mfrom[0m [32m"@/lib/i18n"[0m;
+  [90m3 |[0m [36mimport[0m { useSSE } [36mfrom[0m [32m"@/hooks/useSSE"[0m;
+  [90m4 |[0m [36mimport[0m { getStreamUrl } [36mfrom[0m [32m"@/lib/api"[0m;
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx
+
+
+
+./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts:1:33
+You're importing a module that depends on `useRef` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { useState, useCallback, useRef } [36mfrom[0m [32m'react'[0m;
+  [90m  |[0m                                 [31m[1m^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mexport[0m [36minterface[0m [33mSSEMessage[0m {
+  [90m4 |[0m   role: [32m'user'[0m | [32m'ai'[0m;
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx
+
+
+
+./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx:1:29
+You're importing a module that depends on `useState` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { useEffect, useRef, useState } [36mfrom[0m [32m"react"[0m;
+  [90m  |[0m                             [31m[1m^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m { useI18n } [36mfrom[0m [32m"@/lib/i18n"[0m;
+  [90m3 |[0m [36mimport[0m { useSSE } [36mfrom[0m [32m"@/hooks/useSSE"[0m;
+  [90m4 |[0m [36mimport[0m { getStreamUrl } [36mfrom[0m [32m"@/lib/api"[0m;
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx
+
+
+
+./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx:1:10
+You're importing a module that depends on `useState` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { useState, useEffect } [36mfrom[0m [32m"react"[0m;
+  [90m  |[0m          [31m[1m^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m { getOriginalExtraction, updateExtraction, reExtract } [36mf...[0m
+  [90m3 |[0m [36mimport[0m { useI18n } [36mfrom[0m [32m"@/lib/i18n"[0m;
+  [90m4 |[0m [36mimport[0m { [33mCard[0m, [33mCardContent[0m, [33mCardHeader[0m, [33mCardTitle[0m, [33mCardDescript...[0m
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx
+
+
+
+./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts:1:10
+You're importing a module that depends on `useState` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { useState, useCallback, useRef } [36mfrom[0m [32m'react'[0m;
+  [90m  |[0m          [31m[1m^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mexport[0m [36minterface[0m [33mSSEMessage[0m {
+  [90m4 |[0m   role: [32m'user'[0m | [32m'ai'[0m;
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx
+
+
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx:1:10
+You're importing a module that depends on `useEffect` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useEffect, useRef, useState } from "react";
+    |          ^^^^^^^^^
+  2 | import { useI18n } from "@/lib/i18n";
+  3 | import { useSSE } from "@/hooks/useSSE";
+  4 | import { getStreamUrl } from "@/lib/api";
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx:1:20
+You're importing a module that depends on `useEffect` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useState, useEffect } from "react";
+    |                    ^^^^^^^^^
+  2 | import { getOriginalExtraction, updateExtraction, reExtract } f...
+  3 | import { useI18n } from "@/lib/i18n";
+  4 | import { Card, CardContent, CardHeader, CardTitle, CardDescript...
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx:1:21
+You're importing a module that depends on `useRef` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useEffect, useRef, useState } from "react";
+    |                     ^^^^^^
+  2 | import { useI18n } from "@/lib/i18n";
+  3 | import { useSSE } from "@/hooks/useSSE";
+  4 | import { getStreamUrl } from "@/lib/api";
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts:1:33
+You're importing a module that depends on `useRef` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useState, useCallback, useRef } from 'react';
+    |                                 ^^^^^^
+  2 |
+  3 | export interface SSEMessage {
+  4 |   role: 'user' | 'ai';
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx:1:29
+You're importing a module that depends on `useState` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useEffect, useRef, useState } from "react";
+    |                             ^^^^^^^^
+  2 | import { useI18n } from "@/lib/i18n";
+  3 | import { useSSE } from "@/hooks/useSSE";
+  4 | import { getStreamUrl } from "@/lib/api";
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx:1:10
+You're importing a module that depends on `useState` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useState, useEffect } from "react";
+    |          ^^^^^^^^
+  2 | import { getOriginalExtraction, updateExtraction, reExtract } f...
+  3 | import { useI18n } from "@/lib/i18n";
+  4 | import { Card, CardContent, CardHeader, CardTitle, CardDescript...
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts:1:10
+You're importing a module that depends on `useState` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useState, useCallback, useRef } from 'react';
+    |          ^^^^^^^^
+  2 |
+  3 | export interface SSEMessage {
+  4 |   role: 'user' | 'ai';
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx:1:10
+You're importing a module that depends on `useEffect` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useEffect, useRef, useState } from "react";
+    |          ^^^^^^^^^
+  2 | import { useI18n } from "@/lib/i18n";
+  3 | import { useSSE } from "@/hooks/useSSE";
+  4 | import { getStreamUrl } from "@/lib/api";
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx:1:20
+You're importing a module that depends on `useEffect` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useState, useEffect } from "react";
+    |                    ^^^^^^^^^
+  2 | import { getOriginalExtraction, updateExtraction, reExtract } f...
+  3 | import { useI18n } from "@/lib/i18n";
+  4 | import { Card, CardContent, CardHeader, CardTitle, CardDescript...
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx:1:21
+You're importing a module that depends on `useRef` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useEffect, useRef, useState } from "react";
+    |                     ^^^^^^
+  2 | import { useI18n } from "@/lib/i18n";
+  3 | import { useSSE } from "@/hooks/useSSE";
+  4 | import { getStreamUrl } from "@/lib/api";
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts:1:33
+You're importing a module that depends on `useRef` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useState, useCallback, useRef } from 'react';
+    |                                 ^^^^^^
+  2 |
+  3 | export interface SSEMessage {
+  4 |   role: 'user' | 'ai';
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx:1:29
+You're importing a module that depends on `useState` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useEffect, useRef, useState } from "react";
+    |                             ^^^^^^^^
+  2 | import { useI18n } from "@/lib/i18n";
+  3 | import { useSSE } from "@/hooks/useSSE";
+  4 | import { getStreamUrl } from "@/lib/api";
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx:1:10
+You're importing a module that depends on `useState` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useState, useEffect } from "react";
+    |          ^^^^^^^^
+  2 | import { getOriginalExtraction, updateExtraction, reExtract } f...
+  3 | import { useI18n } from "@/lib/i18n";
+  4 | import { Card, CardContent, CardHeader, CardTitle, CardDescript...
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts:1:10
+You're importing a module that depends on `useState` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useState, useCallback, useRef } from 'react';
+    |          ^^^^^^^^
+  2 |
+  3 | export interface SSEMessage {
+  4 |   role: 'user' | 'ai';
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+ GET /document/e28b6a62-419f-4a19-b415-5c6aeeaa1109 500 in 2.2s (next.js: 2.0s, application-code: 162ms)
+⨯ ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx:1:10
+You're importing a module that depends on `useEffect` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { useEffect, useRef, useState } [36mfrom[0m [32m"react"[0m;
+  [90m  |[0m          [31m[1m^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m { useI18n } [36mfrom[0m [32m"@/lib/i18n"[0m;
+  [90m3 |[0m [36mimport[0m { useSSE } [36mfrom[0m [32m"@/hooks/useSSE"[0m;
+  [90m4 |[0m [36mimport[0m { getStreamUrl } [36mfrom[0m [32m"@/lib/api"[0m;
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx
+
+
+
+./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx:1:20
+You're importing a module that depends on `useEffect` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { useState, useEffect } [36mfrom[0m [32m"react"[0m;
+  [90m  |[0m                    [31m[1m^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m { getOriginalExtraction, updateExtraction, reExtract } [36mf...[0m
+  [90m3 |[0m [36mimport[0m { useI18n } [36mfrom[0m [32m"@/lib/i18n"[0m;
+  [90m4 |[0m [36mimport[0m { [33mCard[0m, [33mCardContent[0m, [33mCardHeader[0m, [33mCardTitle[0m, [33mCardDescript...[0m
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx
+
+
+
+./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx:1:21
+You're importing a module that depends on `useRef` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { useEffect, useRef, useState } [36mfrom[0m [32m"react"[0m;
+  [90m  |[0m                     [31m[1m^^^^^^[0m
+  [90m2 |[0m [36mimport[0m { useI18n } [36mfrom[0m [32m"@/lib/i18n"[0m;
+  [90m3 |[0m [36mimport[0m { useSSE } [36mfrom[0m [32m"@/hooks/useSSE"[0m;
+  [90m4 |[0m [36mimport[0m { getStreamUrl } [36mfrom[0m [32m"@/lib/api"[0m;
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx
+
+
+
+./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts:1:33
+You're importing a module that depends on `useRef` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { useState, useCallback, useRef } [36mfrom[0m [32m'react'[0m;
+  [90m  |[0m                                 [31m[1m^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mexport[0m [36minterface[0m [33mSSEMessage[0m {
+  [90m4 |[0m   role: [32m'user'[0m | [32m'ai'[0m;
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx
+
+
+
+./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx:1:29
+You're importing a module that depends on `useState` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { useEffect, useRef, useState } [36mfrom[0m [32m"react"[0m;
+  [90m  |[0m                             [31m[1m^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m { useI18n } [36mfrom[0m [32m"@/lib/i18n"[0m;
+  [90m3 |[0m [36mimport[0m { useSSE } [36mfrom[0m [32m"@/hooks/useSSE"[0m;
+  [90m4 |[0m [36mimport[0m { getStreamUrl } [36mfrom[0m [32m"@/lib/api"[0m;
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx
+
+
+
+./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx:1:10
+You're importing a module that depends on `useState` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { useState, useEffect } [36mfrom[0m [32m"react"[0m;
+  [90m  |[0m          [31m[1m^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m { getOriginalExtraction, updateExtraction, reExtract } [36mf...[0m
+  [90m3 |[0m [36mimport[0m { useI18n } [36mfrom[0m [32m"@/lib/i18n"[0m;
+  [90m4 |[0m [36mimport[0m { [33mCard[0m, [33mCardContent[0m, [33mCardHeader[0m, [33mCardTitle[0m, [33mCardDescript...[0m
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx
+
+
+
+./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts:1:10
+You're importing a module that depends on `useState` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { useState, useCallback, useRef } [36mfrom[0m [32m'react'[0m;
+  [90m  |[0m          [31m[1m^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mexport[0m [36minterface[0m [33mSSEMessage[0m {
+  [90m4 |[0m   role: [32m'user'[0m | [32m'ai'[0m;
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx
+
+
+ GET /document/e28b6a62-419f-4a19-b415-5c6aeeaa1109 500 in 20ms (next.js: 9ms, application-code: 12ms)
+[browser] Uncaught Error: ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx:1:10
+You're importing a module that depends on `useEffect` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useEffect, useRef, useState } from "react";
+    |          ^^^^^^^^^
+  2 | import { useI18n } from "@/lib/i18n";
+  3 | import { useSSE } from "@/hooks/useSSE";
+  4 | import { getStreamUrl } from "@/lib/api";
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx
+
+
+    at <unknown> (Error: ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx:1:10)
+    at <unknown> (Error: (./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx:1:10)
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx:1:10
+You're importing a module that depends on `useEffect` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useEffect, useRef, useState } from "react";
+    |          ^^^^^^^^^
+  2 | import { useI18n } from "@/lib/i18n";
+  3 | import { useSSE } from "@/hooks/useSSE";
+  4 | import { getStreamUrl } from "@/lib/api";
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx:1:20
+You're importing a module that depends on `useEffect` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useState, useEffect } from "react";
+    |                    ^^^^^^^^^
+  2 | import { getOriginalExtraction, updateExtraction, reExtract } f...
+  3 | import { useI18n } from "@/lib/i18n";
+  4 | import { Card, CardContent, CardHeader, CardTitle, CardDescript...
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx:1:21
+You're importing a module that depends on `useRef` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useEffect, useRef, useState } from "react";
+    |                     ^^^^^^
+  2 | import { useI18n } from "@/lib/i18n";
+  3 | import { useSSE } from "@/hooks/useSSE";
+  4 | import { getStreamUrl } from "@/lib/api";
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts:1:33
+You're importing a module that depends on `useRef` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useState, useCallback, useRef } from 'react';
+    |                                 ^^^^^^
+  2 |
+  3 | export interface SSEMessage {
+  4 |   role: 'user' | 'ai';
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx:1:29
+You're importing a module that depends on `useState` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useEffect, useRef, useState } from "react";
+    |                             ^^^^^^^^
+  2 | import { useI18n } from "@/lib/i18n";
+  3 | import { useSSE } from "@/hooks/useSSE";
+  4 | import { getStreamUrl } from "@/lib/api";
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx:1:10
+You're importing a module that depends on `useState` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useState, useEffect } from "react";
+    |          ^^^^^^^^
+  2 | import { getOriginalExtraction, updateExtraction, reExtract } f...
+  3 | import { useI18n } from "@/lib/i18n";
+  4 | import { Card, CardContent, CardHeader, CardTitle, CardDescript...
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts:1:10
+You're importing a module that depends on `useState` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useState, useCallback, useRef } from 'react';
+    |          ^^^^^^^^
+  2 |
+  3 | export interface SSEMessage {
+  4 |   role: 'user' | 'ai';
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx:1:10
+You're importing a module that depends on `useEffect` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useEffect, useRef, useState } from "react";
+    |          ^^^^^^^^^
+  2 | import { useI18n } from "@/lib/i18n";
+  3 | import { useSSE } from "@/hooks/useSSE";
+  4 | import { getStreamUrl } from "@/lib/api";
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx:1:20
+You're importing a module that depends on `useEffect` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useState, useEffect } from "react";
+    |                    ^^^^^^^^^
+  2 | import { getOriginalExtraction, updateExtraction, reExtract } f...
+  3 | import { useI18n } from "@/lib/i18n";
+  4 | import { Card, CardContent, CardHeader, CardTitle, CardDescript...
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx:1:21
+You're importing a module that depends on `useRef` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useEffect, useRef, useState } from "react";
+    |                     ^^^^^^
+  2 | import { useI18n } from "@/lib/i18n";
+  3 | import { useSSE } from "@/hooks/useSSE";
+  4 | import { getStreamUrl } from "@/lib/api";
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts:1:33
+You're importing a module that depends on `useRef` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useState, useCallback, useRef } from 'react';
+    |                                 ^^^^^^
+  2 |
+  3 | export interface SSEMessage {
+  4 |   role: 'user' | 'ai';
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx:1:29
+You're importing a module that depends on `useState` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useEffect, useRef, useState } from "react";
+    |                             ^^^^^^^^
+  2 | import { useI18n } from "@/lib/i18n";
+  3 | import { useSSE } from "@/hooks/useSSE";
+  4 | import { getStreamUrl } from "@/lib/api";
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx:1:10
+You're importing a module that depends on `useState` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useState, useEffect } from "react";
+    |          ^^^^^^^^
+  2 | import { getOriginalExtraction, updateExtraction, reExtract } f...
+  3 | import { useI18n } from "@/lib/i18n";
+  4 | import { Card, CardContent, CardHeader, CardTitle, CardDescript...
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts:1:10
+You're importing a module that depends on `useState` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useState, useCallback, useRef } from 'react';
+    |          ^^^^^^^^
+  2 |
+  3 | export interface SSEMessage {
+  4 |   role: 'user' | 'ai';
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx:1:10
+You're importing a module that depends on `useEffect` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useEffect, useRef, useState } from "react";
+    |          ^^^^^^^^^
+  2 | import { useI18n } from "@/lib/i18n";
+  3 | import { useSSE } from "@/hooks/useSSE";
+  4 | import { getStreamUrl } from "@/lib/api";
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx:1:20
+You're importing a module that depends on `useEffect` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useState, useEffect } from "react";
+    |                    ^^^^^^^^^
+  2 | import { getOriginalExtraction, updateExtraction, reExtract } f...
+  3 | import { useI18n } from "@/lib/i18n";
+  4 | import { Card, CardContent, CardHeader, CardTitle, CardDescript...
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx:1:21
+You're importing a module that depends on `useRef` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useEffect, useRef, useState } from "react";
+    |                     ^^^^^^
+  2 | import { useI18n } from "@/lib/i18n";
+  3 | import { useSSE } from "@/hooks/useSSE";
+  4 | import { getStreamUrl } from "@/lib/api";
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts:1:33
+You're importing a module that depends on `useRef` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useState, useCallback, useRef } from 'react';
+    |                                 ^^^^^^
+  2 |
+  3 | export interface SSEMessage {
+  4 |   role: 'user' | 'ai';
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx:1:29
+You're importing a module that depends on `useState` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useEffect, useRef, useState } from "react";
+    |                             ^^^^^^^^
+  2 | import { useI18n } from "@/lib/i18n";
+  3 | import { useSSE } from "@/hooks/useSSE";
+  4 | import { getStreamUrl } from "@/lib/api";
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx:1:10
+You're importing a module that depends on `useState` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useState, useEffect } from "react";
+    |          ^^^^^^^^
+  2 | import { getOriginalExtraction, updateExtraction, reExtract } f...
+  3 | import { useI18n } from "@/lib/i18n";
+  4 | import { Card, CardContent, CardHeader, CardTitle, CardDescript...
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts:1:10
+You're importing a module that depends on `useState` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useState, useCallback, useRef } from 'react';
+    |          ^^^^^^^^
+  2 |
+  3 | export interface SSEMessage {
+  4 |   role: 'user' | 'ai';
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/hooks/useSSE.ts
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ChatPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+⨯ ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx:1:20
+You're importing a module that depends on `useEffect` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { useState, useEffect } [36mfrom[0m [32m"react"[0m;
+  [90m  |[0m                    [31m[1m^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m { getOriginalExtraction, updateExtraction, reExtract } [36mf...[0m
+  [90m3 |[0m [36mimport[0m { useI18n } [36mfrom[0m [32m"@/lib/i18n"[0m;
+  [90m4 |[0m [36mimport[0m { [33mCard[0m, [33mCardContent[0m, [33mCardHeader[0m, [33mCardTitle[0m, [33mCardDescript...[0m
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx
+
+
+
+./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx:1:10
+You're importing a module that depends on `useState` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { useState, useEffect } [36mfrom[0m [32m"react"[0m;
+  [90m  |[0m          [31m[1m^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m { getOriginalExtraction, updateExtraction, reExtract } [36mf...[0m
+  [90m3 |[0m [36mimport[0m { useI18n } [36mfrom[0m [32m"@/lib/i18n"[0m;
+  [90m4 |[0m [36mimport[0m { [33mCard[0m, [33mCardContent[0m, [33mCardHeader[0m, [33mCardTitle[0m, [33mCardDescript...[0m
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx
+
+
+ GET /document/e28b6a62-419f-4a19-b415-5c6aeeaa1109 500 in 30ms (next.js: 17ms, application-code: 13ms)
+[browser] Uncaught Error: ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx:1:20
+You're importing a module that depends on `useEffect` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useState, useEffect } from "react";
+    |                    ^^^^^^^^^
+  2 | import { getOriginalExtraction, updateExtraction, reExtract } f...
+  3 | import { useI18n } from "@/lib/i18n";
+  4 | import { Card, CardContent, CardHeader, CardTitle, CardDescript...
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx
+
+
+    at <unknown> (Error: ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx:1:20)
+    at <unknown> (Error: (./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx:1:20)
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx:1:20
+You're importing a module that depends on `useEffect` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useState, useEffect } from "react";
+    |                    ^^^^^^^^^
+  2 | import { getOriginalExtraction, updateExtraction, reExtract } f...
+  3 | import { useI18n } from "@/lib/i18n";
+  4 | import { Card, CardContent, CardHeader, CardTitle, CardDescript...
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx:1:10
+You're importing a module that depends on `useState` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useState, useEffect } from "react";
+    |          ^^^^^^^^
+  2 | import { getOriginalExtraction, updateExtraction, reExtract } f...
+  3 | import { useI18n } from "@/lib/i18n";
+  4 | import { Card, CardContent, CardHeader, CardTitle, CardDescript...
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx:1:20
+You're importing a module that depends on `useEffect` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useState, useEffect } from "react";
+    |                    ^^^^^^^^^
+  2 | import { getOriginalExtraction, updateExtraction, reExtract } f...
+  3 | import { useI18n } from "@/lib/i18n";
+  4 | import { Card, CardContent, CardHeader, CardTitle, CardDescript...
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+[browser] ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx:1:10
+You're importing a module that depends on `useState` into a React Server Component module. This API is only available in Client Components. To fix, mark the file (or its parent) with the `"use client"` directive.
+    Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+> 1 | import { useState, useEffect } from "react";
+    |          ^^^^^^^^
+  2 | import { getOriginalExtraction, updateExtraction, reExtract } f...
+  3 | import { useI18n } from "@/lib/i18n";
+  4 | import { Card, CardContent, CardHeader, CardTitle, CardDescript...
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/components/ExtractionPanel.tsx
+    ./Documents/coding/ai_full_stack/the_Mittelstand_Document_Agent/frontend/src/app/document/[id]/page.tsx 
+ GET /document/e28b6a62-419f-4a19-b415-5c6aeeaa1109 200 in 177ms
+ GET /document/e28b6a62-419f-4a19-b415-5c6aeeaa1109 200 in 932ms (next.js: 648ms, application-code: 284ms)
+ GET /document/e28b6a62-419f-4a19-b415-5c6aeeaa1109 200 in 88ms (next.js: 11ms, application-code: 78ms)
+ GET /document/e28b6a62-419f-4a19-b415-5c6aeeaa1109 200 in 73ms (next.js: 7ms, application-code: 66ms)
+ GET /document/e28b6a62-419f-4a19-b415-5c6aeeaa1109 200 in 88ms (next.js: 5ms, application-code: 83ms)
+ GET / 200 in 142ms (next.js: 24ms, application-code: 118ms)
+ GET /document/b54b6501-8415-4db7-9f19-0b84b6b79cbd 200 in 52ms (next.js: 10ms, application-code: 42ms)
+[browser] Fetch error TypeError: network error
+TypeError: network error (src/hooks/useSSE.ts:86:17)
