@@ -31,3 +31,7 @@ backend/uploads/*
 
 # Qdrant local storage
 qdrant_storage/
+
+# Cache & Logs
+frontend/.npm-local/
+*.log
