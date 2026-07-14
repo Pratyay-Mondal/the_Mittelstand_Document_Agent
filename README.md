@@ -83,7 +83,7 @@ docker compose up -d
 ### 2. Backend Setup
 ```bash
 cd backend
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 
